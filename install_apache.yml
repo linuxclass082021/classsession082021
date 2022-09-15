@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install python3 package
+    yum:
+      name: python3
+      state: latest 
